@@ -1,0 +1,28 @@
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - src
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v1
+      - name: Setup Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Install Dependencies
+        run: |
+          npm ci
+          npm install -g gatsby-cli
+      - name: Build Site
+        run: gatsby build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
