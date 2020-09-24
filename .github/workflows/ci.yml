@@ -6,15 +6,17 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+
       - name: Setup Node.js 12
         uses: actions/setup-node@v1
         with:
           node-version: '12'
+
       - name: Restore NPM Cache
         uses: actions/cache@v2
         with:
@@ -22,12 +24,63 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - name: Install Dependencies
         run: |
           npm ci
           npm install -g gatsby-cli
+
       - name: Build Site
         run: gatsby build
+
+      - name: Upload Public Folder
+        uses: actions/upload-artifact@v2
+        with:
+          name: public
+          path: public/
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Download Public Folder
+        uses: actions/download-artifact@v2
+        with:
+          name: public
+
+      - name: Setup Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+
+      - name: Restore NPM Cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.4.x
+          lhci autorun
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build, lighthouse]
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Download Public Folder
+        uses: actions/download-artifact@v2
+        with:
+          name: public
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
