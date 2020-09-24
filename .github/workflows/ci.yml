@@ -33,7 +33,7 @@ jobs:
       - name: Build Site
         run: gatsby build
 
-      - name: Upload Public Folder
+      - name: Upload `public` Folder
         uses: actions/upload-artifact@v2
         with:
           name: public
@@ -46,10 +46,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
-      - name: Download Public Folder
+      - name: Download `public` Folder
         uses: actions/download-artifact@v2
         with:
           name: public
+          path: public/
 
       - name: Setup Node.js 12
         uses: actions/setup-node@v1
@@ -76,10 +77,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
-      - name: Download Public Folder
+      - name: Download `public` Folder
         uses: actions/download-artifact@v2
         with:
           name: public
+          path: public/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
