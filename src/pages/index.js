@@ -11,7 +11,7 @@ const IndexPage = () => {
       heroImage: file(relativePath: { eq: "hero.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
