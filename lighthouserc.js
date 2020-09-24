@@ -6,6 +6,9 @@ module.exports = {
     },
     assert: {
       preset: 'lighthouse:no-pwa',
+      assertions: {
+        'unused-javascript': 'off',
+      },
     },
     upload: {
       target: 'temporary-public-storage',
