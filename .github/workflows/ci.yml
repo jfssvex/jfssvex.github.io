@@ -57,14 +57,6 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Restore NPM Cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
