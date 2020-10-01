@@ -30,7 +30,7 @@ const IndexPage = () => {
           You do not need to have prior experience with the competition to apply to the club, 
           but be sure to learn as much as you can so you can lead the team to success in the coming year.
         </Text>
-        <Text as={a} href="https://www.vexrobotics.com/">Learn more at the VEX robotics website. </Text>
+        <Text as="a" href="https://www.vexrobotics.com/">Learn more at the VEX robotics website. </Text>
     </Layout>
   )
 }
