@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Heading, Text } from "@chakra-ui/core"
+import { Heading, Text, Link } from "@chakra-ui/core"
 import Skills from "../components/skills"
 import ContactFrom from "../components/contact"
 
@@ -39,9 +39,9 @@ const IndexPage = () => {
         to apply to the club, but be sure to learn as much as you can so you can
         lead the team to success in the coming year.
       </Text>
-      <Text as="a" href="https://www.vexrobotics.com/">
+      <Link color="teal.500" href="https://www.vexrobotics.com" isExternal>
         Learn more at the VEX robotics website.{" "}
-      </Text>
+      </Link>
       <center>
         <Box mt={20}>
           <Skills />
