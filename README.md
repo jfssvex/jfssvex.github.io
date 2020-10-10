@@ -2,6 +2,9 @@
 
 JFSS VEX's website for promotion
 
+<!-- Badges -->
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/9957ccac/jfssvex.github.io)
+
 ## Built using
 - Gatsby
 - GitHub Pages

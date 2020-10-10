@@ -27,8 +27,8 @@ jobs:
         uses: actions/cache@v2
         id: gatsby-cache-folder
         with:
-          path: .cache
-          key: ${{ runner.os }}-cache-gatsby
+          path: .cache/
+          key: ${{ runner.os }}-cache-gatsby-${{ hashFiles('src/**/*', '**/gatsby*', '**/package*') }}
           restore-keys: |
             ${{ runner.os }}-cache-gatsby
 
@@ -37,7 +37,7 @@ jobs:
         id: gatsby-public-folder
         with:
           path: public/
-          key: ${{ runner.os }}-public-gatsby
+          key: ${{ runner.os }}-public-gatsby-${{ hashFiles('src/**/*', '**/gatsby*', '**/package*') }}
           restore-keys: |
             ${{ runner.os }}-public-gatsby
 
