@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Flex, Link } from "@chakra-ui/core"
+import { Box, Flex } from "@chakra-ui/core"
 
 function Footer({ data, year }) {
   return (
