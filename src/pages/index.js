@@ -39,7 +39,7 @@ const IndexPage = () => {
         to apply to the club, but be sure to learn as much as you can so you can
         lead the team to success in the coming year.
       </Text>
-      <Link color="teal.500" href="https://www.vexrobotics.com" isExternal>
+      <Link color="blue.600" href="https://www.vexrobotics.com" isExternal>
         Learn more at the VEX robotics website.{" "}
       </Link>
       <center>
