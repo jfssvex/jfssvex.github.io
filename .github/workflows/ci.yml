@@ -80,12 +80,8 @@ jobs:
         env:
           LHCI_GITHUB_APP_TOKEN: secrets.LHCI_GITHUB_APP_TOKEN
 
-  screenshot:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        width: [1200, 992, 768, 600]
-    runs-on: ${{ matrix.os }}
+  percy:
+    runs-on: ubuntu-latest
     needs: [build]
     steps:
       - name: Checkout Repo
@@ -96,23 +92,12 @@ jobs:
         with:
           name: public
           path: public/
-      
-      - name: Setup Node.js 12
-        uses: actions/setup-node@v1
+      - name: Percy Test
+        uses: percy/snapshot-action@v0.1.0
         with:
-          node-version: '12'
-      
-      - name: Serve site
-        run: |
-          npm install -g gatsby-cli
-          gatsby serve -p 9000
-      
-      - name: Screenshot Website
-        uses: swinton/screenshot-website@v1.x
-        with:
-          source: http://localhost:9000
-          destination: screenshot-${{ matrix.os }}-${{ matrix.width }}.png
-          width: ${{ matrix.width }}
+          build-directory: "public/"
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
   deploy:
     runs-on: ubuntu-latest
