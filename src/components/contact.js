@@ -63,7 +63,6 @@ export default class ContactForm extends React.Component {
               <br />
 
               <Button
-                colorScheme="blue"
                 height="48px"
                 width="200px"
                 type="submit"
