@@ -45,6 +45,7 @@ const IndexPage = () => {
           Learn more at the VEX robotics website.{" "}
         </Text>
       </Box>
+
       <center>
         <Box mt={20}>
           <Skills />
