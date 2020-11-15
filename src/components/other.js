@@ -13,6 +13,7 @@ const Other = () => {
       <SimpleGrid columns={2} spacing={5}>
         <Box>
           <iframe
+            title="3D Model"
             src="https://myhub.autodesk360.com/ue2d7bfee/shares/public/SH56a43QTfd62c1cd968ec70f027b19cabfc?mode=embed"
             width="640"
             height="470"
