@@ -57,6 +57,7 @@ const IndexPage = () => {
         <br />
         <br />
         <ContactFrom />
+        <br />
         <Footer data={data} year={year} />
       </center>
     </Layout>

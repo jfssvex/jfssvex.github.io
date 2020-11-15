@@ -12,7 +12,7 @@ function Footer({ data, year }) {
       alignItems="center"
     >
       <SimpleGrid columns={3} spacing={10}>
-        <Box>
+        <Box as="span">
           <Text style={{ textAlign: "left", alignSelf: "stretch" }}>
             JFSS Vex
           </Text>
