@@ -5,7 +5,11 @@ import { Box, Heading } from "@chakra-ui/core"
 const Hero = ({ image, text }) => {
   return (
     <Box position="relative" textAlign="center">
-      <Img fluid={image.childImageSharp.fluid} style={{filter: `brightness(0.4)`}}/>
+      <Img
+        alt="Image"
+        fluid={image.childImageSharp.fluid}
+        style={{ filter: `brightness(0.4)` }}
+      />
       <Heading
         as="h1"
         size="xl"
