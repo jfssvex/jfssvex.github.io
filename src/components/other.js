@@ -19,6 +19,7 @@ const Other = () => {
             height="470"
             allowfullscreen="true"
             webkitallowfullscreen="true"
+            alt="3D Model"
             mozallowfullscreen="true"
             frameborder="0"
           ></iframe>
@@ -34,6 +35,7 @@ const Other = () => {
           <Box
             as="img"
             src={devops}
+            alt="Image"
             pos="absolute"
             width="inherit"
             height="100%"
