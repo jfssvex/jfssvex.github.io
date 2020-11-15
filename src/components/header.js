@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       {siteTitle}
     </Heading>
     <Heading
-      fontSize="25px"
+      fontSize="25"
       style={{ position: "absolute", top: "1%", right: "30%" }}
       color="white"
     >
@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
     </Heading>
 
     <Heading
-      fontSize="25px"
+      fontSize="25"
       style={{ position: "absolute", top: "1%", right: "15%" }}
       color="white"
     >
