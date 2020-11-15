@@ -10,6 +10,18 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Heading>
     </Link>
+    <Link to="/about">
+      <Heading
+
+    <Link to="/team">
+      <Heading
+        fontSize="25px"
+        style={{ position: "absolute", top: "1%", right: "15%" }}
+        color="white"
+      >
+        Team
+      </Heading>
+    </Link>
   </Stack>
 )
 
