@@ -21,6 +21,7 @@ const Other = () => {
           <Box
             as="img"
             src={devops}
+            alt="image"
             pos="absolute"
             width="inherit"
             height="100%"
