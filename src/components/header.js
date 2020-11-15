@@ -5,23 +5,24 @@ import { Stack, Heading } from "@chakra-ui/core"
 
 const Header = ({ siteTitle }) => (
   <Stack as="header" bg="purple.800" width="100%" direction="row" padding="4">
-    <Link to="/">
-      <Heading as="p" size="xl" color="white">
-        {siteTitle}
-      </Heading>
-    </Link>
-    <Link to="/about">
-      <Heading
+    <Heading as="p" size="xl" color="white">
+      {siteTitle}
+    </Heading>
+    <Heading
+      fontSize="25px"
+      style={{ position: "absolute", top: "1%", right: "30%" }}
+      color="white"
+    >
+      About
+    </Heading>
 
-    <Link to="/team">
-      <Heading
-        fontSize="25px"
-        style={{ position: "absolute", top: "1%", right: "15%" }}
-        color="white"
-      >
-        Team
-      </Heading>
-    </Link>
+    <Heading
+      fontSize="25px"
+      style={{ position: "absolute", top: "1%", right: "15%" }}
+      color="white"
+    >
+      Team
+    </Heading>
   </Stack>
 )
 
