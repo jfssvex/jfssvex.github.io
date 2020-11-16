@@ -16,7 +16,7 @@ const Skills = () => {
       <Heading as="h1" mb={5} textAlign={["left", "center"]}>
         Something
       </Heading>
-<br />
+      <br />
       <SimpleGrid columns={[1, 1, 2, 4]} spacing={5}>
         {types.map((type, key) => (
           <Box
