@@ -144,7 +144,7 @@ const TeamPage = () => {
               <Image
                 borderRadius="full"
                 boxSize="150px"
-                src={require("../images/Karen.jpg")}
+                src={require("../images/Jason.jpg")}
                 alt="Jason Huang"
               />
               <Box width="275px">
