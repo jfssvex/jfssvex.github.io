@@ -25,18 +25,14 @@ const Header = ({ siteTitle }) => (
         style={{ position: "absolute", top: "30px", right: "42%" }}
         rightIcon={<ChevronDownIcon />}
         variant="link"
-        colorScheme="blue"
+        color="white"
       >
         About
       </MenuButton>
       <MenuList>
-        <Link to="/vex">
+        <Link to="/what-is-vex">
           <MenuItem>What is VEX</MenuItem>
         </Link>
-        <MenuItem>Create a Copy</MenuItem>
-        <MenuItem>Mark as Draft</MenuItem>
-        <MenuItem>Delete</MenuItem>
-        <MenuItem>Attend a Workshop</MenuItem>
       </MenuList>
     </Menu>
     <Menu>
@@ -44,10 +40,9 @@ const Header = ({ siteTitle }) => (
         <MenuButton
           as={Button}
           variant="link"
-          colorScheme="blue"
+          color="white"
           style={{ position: "absolute", top: "30px", right: "30%" }}
         >
-          {" "}
           Team
         </MenuButton>
       </Link>
@@ -58,7 +53,7 @@ const Header = ({ siteTitle }) => (
         style={{ position: "absolute", top: "30px", right: "15%" }}
         rightIcon={<ChevronDownIcon />}
         variant="link"
-        colorScheme="blue"
+        color="white"
       >
         Resources
       </MenuButton>
