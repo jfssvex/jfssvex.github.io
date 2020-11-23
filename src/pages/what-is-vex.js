@@ -11,7 +11,7 @@ import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => {
+const VexPage = () => {
   const data = useStaticQuery(graphql`
     query {
       heroImage: file(relativePath: { eq: "hero.png" }) {
@@ -57,7 +57,7 @@ const IndexPage = () => {
           <Box>
             <Image
               src="https://www.vexrobotics.com/media/wysiwyg/VRC-ChangeUp-Comp_2.jpg"
-              alt="Dan Abramov"
+              alt="Game Zone"
             />
           </Box>
           <Box>
@@ -86,4 +86,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default VexPage

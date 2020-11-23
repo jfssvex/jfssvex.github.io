@@ -33,6 +33,9 @@ const Header = ({ siteTitle }) => (
         <Link to="/what-is-vex">
           <MenuItem>What is VEX</MenuItem>
         </Link>
+        <Link to="/history">
+          <MenuItem>Our History</MenuItem>
+        </Link>
       </MenuList>
     </Menu>
     <Menu>
@@ -58,7 +61,7 @@ const Header = ({ siteTitle }) => (
         Resources
       </MenuButton>
       <MenuList>
-        <Link to="https://schools.peelschools.org/sec/johnfraser/Pages/default.aspx">
+        <Link to="https://drive.google.com/drive/folders/11m41EBCE_DG69Flks_AlaHAgajLtyDSM?usp=sharing">
           <MenuItem>Documentation</MenuItem>
         </Link>
         <Link to="https://github.com/jfssvex/jfssvex.github.io">
