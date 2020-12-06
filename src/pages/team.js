@@ -3,7 +3,7 @@ import { Heading, Text, SimpleGrid, Image, Box } from "@chakra-ui/core"
 import Footer from "../components/footer"
 
 import Layout from "../components/layout"
-
+import SEO from "../components/seo"
 import TeamCard from "../components/teamCard"
 
 const TeamPage = () => {
@@ -11,6 +11,7 @@ const TeamPage = () => {
 
   return (
     <Layout heroText="JFSS Royals">
+      <SEO title="Team" />
       <Box px={5} width="95vw">
         <Heading as="h2" size="xl" textAlign="center">
           Our Current Team
