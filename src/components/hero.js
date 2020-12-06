@@ -12,7 +12,7 @@ const Hero = ({ image, text }) => {
       />
       <Heading
         as="h1"
-        size="xl"
+        size="2xl"
         color="white"
         position="absolute"
         top="50%"
