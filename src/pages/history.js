@@ -27,6 +27,7 @@ const HistoryPage = () => {
 
   return (
     <Layout heroText="JFSS Royals">
+      <SEO title="History" />
       {/* <h1>Hi people</h1> */}
       <Box px={5} width="95vw">
         <br />
