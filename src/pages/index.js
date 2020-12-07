@@ -14,7 +14,7 @@ import SEO from "../components/seo"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "newHero.png" }) {
+      heroImage: file(relativePath: { eq: "myHeroImage.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
