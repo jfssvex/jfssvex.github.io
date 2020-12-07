@@ -8,6 +8,7 @@ import {
   MenuList,
   MenuItem,
   Button,
+  Spacer,
 } from "@chakra-ui/core"
 import { Link } from "gatsby"
 import { ChevronDownIcon } from "@chakra-ui/icons"
@@ -19,13 +20,12 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Heading>
     </Link>
+    <Spacer />
     <Menu>
       <MenuButton
         as={Button}
-        style={{ position: "absolute", top: "30px", right: "42%" }}
         rightIcon={<ChevronDownIcon />}
-        variant="link"
-        color="white"
+        colorScheme="purple"
       >
         About
       </MenuButton>
@@ -38,25 +38,14 @@ const Header = ({ siteTitle }) => (
         </Link>
       </MenuList>
     </Menu>
-    <Menu>
-      <Link to="/team">
-        <MenuButton
-          as={Button}
-          variant="link"
-          color="white"
-          style={{ position: "absolute", top: "30px", right: "30%" }}
-        >
-          Team
-        </MenuButton>
-      </Link>
-    </Menu>
+    <Button as={Link} to="/team" colorScheme="purple">
+      Team
+    </Button>
     <Menu>
       <MenuButton
         as={Button}
-        style={{ position: "absolute", top: "30px", right: "15%" }}
         rightIcon={<ChevronDownIcon />}
-        variant="link"
-        color="white"
+        colorScheme="purple"
       >
         Resources
       </MenuButton>

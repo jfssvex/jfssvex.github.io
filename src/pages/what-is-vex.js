@@ -27,6 +27,7 @@ const VexPage = () => {
 
   return (
     <Layout heroText="JFSS Royals">
+      <SEO title="What is VEX?" />
       {/* <h1>Hi people</h1> */}
       <Box px={5} width="95vw">
         <br />

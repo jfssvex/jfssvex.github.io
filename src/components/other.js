@@ -10,13 +10,18 @@ const Other = () => {
         Something Else
       </Heading>
       <br />
-      <SimpleGrid columns={2} spacing={5}>
-        <Box>
+      <SimpleGrid
+        columns={{ sm: 1, md: 2 }}
+        spacing={5}
+        height={{ sm: "940px", md: "470px" }}
+        maxWidth="1280px"
+      >
+        <Box flex="1 1 auto">
           <iframe
             title="3D Model"
             src="https://myhub.autodesk360.com/ue2d7bfee/shares/public/SH56a43QTfd62c1cd968ec70f027b19cabfc?mode=embed"
-            width="640"
-            height="470"
+            width="100%"
+            height="100%"
             allowfullscreen="true"
             webkitallowfullscreen="true"
             alt="3D Model"
@@ -29,8 +34,9 @@ const Other = () => {
           pb={8}
           position="relative"
           bg={"blue.100"}
-          width="640px"
-          height="470px"
+          // width="640px"
+          // height="470px"
+          flex="1 1 auto"
         >
           <Box
             as="img"
