@@ -37,12 +37,26 @@ const VexPage = () => {
         </Heading>
         <br />
         <Text>
-          VEX is a popular robotics competition held worldwide. Teams build a
-          robot with provided parts and program it to run through a course and
-          complete objectives, such as throwing a ball in a hoop and moving
-          objects. You do not need to have prior experience with the competition
-          to apply to the club, but be sure to learn as much as you can so you
-          can lead the team to success in the coming year.
+          The VEX Robotics Competition is a popular robotics program for
+          students worldwide, held by Innovation First International. Teams
+          build a robot with provided VEX parts and program it to run through a
+          course and complete objectives, such as throwing a ball in a hoop or
+          stacking cubes into towers and cups. Each challenge allows students to
+          expand their knowledge within the domains of engineering, design,
+          programming, and of course, teamwork! For VRC specifically, high
+          school and middle school students are able to compete with their built
+          robots. For younger students, VEX-IQ is available, and for
+          post-secondary students, VEXU is available.
+          <br />
+          <br />
+          VEX is an excellent learning opportunity for students - just ask our
+          team members! Building a robot from the ground up with your team
+          teaches you to think critically and learn much more about design.
+          Students get to become part of a team working towards the same
+          objective, building tight-knit bonds and friendships with their
+          teammates. Participating in competitions with your team is also an
+          excellent experience, allowing members to meet other individuals who
+          are passionate for STEM.
         </Text>
         <br />
 
