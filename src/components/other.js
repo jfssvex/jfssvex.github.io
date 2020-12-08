@@ -7,7 +7,7 @@ const Other = () => {
   return (
     <Box px={5} width="95vw">
       <Heading as="h1" mb={5} textAlign={["left", "center"]}>
-        Something Else
+        Interested?
       </Heading>
       <br />
 

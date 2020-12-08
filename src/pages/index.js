@@ -63,12 +63,11 @@ const IndexPage = () => {
       </Center>
       <center>
         <Box mt={20}>
-          <Other />
-        </Box>
-        <Box mt={20}>
           <Skills />
         </Box>
-
+        <Box mt={20}>
+          <Other />
+        </Box>
         <br />
         <br />
         <br />
