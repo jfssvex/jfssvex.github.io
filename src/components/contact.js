@@ -33,7 +33,7 @@ export default class ContactForm extends React.Component {
 
     return (
       <div>
-      <Heading as="h1" mb={5} textAlign={["left", "center"]}>
+        <Heading as="h1" mb={5} textAlign={["left", "center"]}>
           Contact Us
         </Heading>
         <br />
@@ -62,12 +62,7 @@ export default class ContactForm extends React.Component {
               <br />
               <br />
 
-              <Button
-                height="48px"
-                width="200px"
-                type="submit"
-                value="Send"
-              >
+              <Button height="48px" width="500px" type="submit" value="Send">
                 Submit
               </Button>
             </form>

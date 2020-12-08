@@ -32,7 +32,7 @@ const IndexPage = () => {
       <br />
       <Center>
         <Box px={5} width="95vw">
-          <SimpleGrid columns={2} spacing={100}>
+          <SimpleGrid columns={2} spacing={50}>
             <Box>
               <Heading as="h2" size="lg">
                 Who Are We?
@@ -53,7 +53,7 @@ const IndexPage = () => {
               </Text>
             </Box>
             <Image
-              width="100vw"
+              width="48vw"
               objectFit="cover"
               src={require("../images/whoweare.png")}
               alt="who are we"

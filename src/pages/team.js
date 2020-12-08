@@ -1,5 +1,5 @@
 import React from "react"
-import { Heading, Text, SimpleGrid, Image, Box } from "@chakra-ui/core"
+import { Heading, SimpleGrid, Box } from "@chakra-ui/core"
 import Footer from "../components/footer"
 
 import Layout from "../components/layout"
