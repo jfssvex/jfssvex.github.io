@@ -67,13 +67,13 @@ const HistoryPage = () => {
               width="48vw"
               objectFit="cover"
               src={require("../images/uno.png")}
-              alt="who are we"
+              alt="history"
             />
             <Image
               width="48vw"
               objectFit="cover"
               src={require("../images/dos.png")}
-              alt="who are we"
+              alt="history"
             />
           </SimpleGrid>
           <br />
@@ -165,14 +165,14 @@ const HistoryPage = () => {
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/whatever5is.png")}
+              src={require("../images/ballin.jpg")}
               alt="history"
               height="360px"
             />
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/whatever6is.png")}
+              src={require("../images/ballin1.jpg")}
               alt="history"
               height="350px"
             />

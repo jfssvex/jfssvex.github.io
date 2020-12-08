@@ -1,15 +1,10 @@
 import { Box, Heading, SimpleGrid, Text, useColorMode } from "@chakra-ui/core"
 import React from "react"
 import { skillTypes } from "../data/data"
-import backend from "../images/backend.svg"
-import devops from "../images/devops.svg"
-import extras from "../images/extras.svg"
-import frontend from "../images/front-end.svg"
 
 const Skills = () => {
   const { colorMode } = useColorMode()
   const types = Object.keys(skillTypes)
-  const images = [frontend, backend, devops, extras]
 
   return (
     <Box px={5} width="95vw">
