@@ -19,7 +19,7 @@ function Footer({ data, year }) {
             </Text>
           </a>
         </Box>
-        <Box>Built by Vex Robotics Team ©{year}</Box>
+        <Box>Built with ReactJS & ChakraUI ©{year}</Box>
         <Box>
           <a href="https://www.instagram.com/jfss_royals/">
             <Text style={{ textAlign: "right", alignSelf: "stretch" }}>
