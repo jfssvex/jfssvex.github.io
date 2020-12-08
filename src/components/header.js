@@ -50,7 +50,7 @@ const Header = ({ siteTitle }) => (
         Resources
       </MenuButton>
       <MenuList>
-        <Link to="https://drive.google.com/drive/folders/11m41EBCE_DG69Flks_AlaHAgajLtyDSM?usp=sharing">
+        <Link to="https://drive.google.com/file/d/1V-EgdF1WoFo_2J8I0jZe2iXR69soDICY/view?usp=sharing">
           <MenuItem>Documentation</MenuItem>
         </Link>
         <Link to="https://github.com/jfssvex/jfssvex.github.io">

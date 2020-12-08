@@ -17,31 +17,13 @@ const TeamPage = () => {
           Our Current Team
         </Heading>
         <br />
+
         <SimpleGrid columns={3} spacing={50}>
-          {/* <Box rounded="lg" pb={8} position="relative" bg={"blue.100"}>
-            <br />
-            <SimpleGrid columns={2} spacing={1}>
-              <Image
-                borderRadius="full"
-                boxSize="150px"
-                src={require("../images/Waris.jpg")}
-                alt="Waris Zahoor"
-              />
-              <Box width="275px">
-                <Heading as="h4" size="md">
-                  Waris Zahoor
-                </Heading>
-                <Text fontSize="xs">
-                  Waris is a grade 12 student at Fraser who is thrilled to be
-                  the Royals' team captain for the year. He leads the team
-                  during meetings/competitions and also doubles as one of the
-                  builders. He is super proud of what the team has accomplished
-                  over the years! Waris is looking forward to the new season and
-                  growing with the team!
-                </Text>
-              </Box>
-            </SimpleGrid>
-          </Box> */}
+          <TeamCard
+            src={require("../images/1.jpg")}
+            name="Mr. Ghorvei"
+            text="Mr. Ghorvei is our team's teacher superviser. Without him and the support of our school, our club wouldn't be here."
+          />
           <TeamCard
             src={require("../images/Waris.jpg")}
             name="Waris Zahoor"
@@ -62,16 +44,6 @@ const TeamPage = () => {
                   autonomous routines to new heights. When he's not working on
                   robotics code, he's probably just programming something else."
           />
-
-          <TeamCard
-            src={require("../images/Jason.jpg")}
-            name="Jason Huang"
-            text="Jason is a grade 12 student, executive member, and lead
-                  engineer in the Royals VEX Robotics team. He has been a part
-                  of VEX from it's inception back in his grade 9 year. Outside
-                  of VEX, he does software development, advocates for open
-                  source software, and does some photography on the side."
-          />
         </SimpleGrid>
 
         <br />
@@ -84,18 +56,17 @@ const TeamPage = () => {
                   in Grade 10, and has probably attended the most meetings out
                   of all the executive members. He also likes planes. A lot."
           />
-
-          <TeamCard
-            src={require("../images/Larry.jpg")}
-            name="Larry Wu"
-            text="Larry Wu is a Grade 12 student at JFSS and is excited to be a
-                  part of his school's VEX robotics team this year as a CAD
-                  Designer. He joined VEX in Grade 11. In his free time he
-                  enjoys, guitar, photography and traveling."
-          />
-
           <TeamCard
             src={require("../images/Jason.jpg")}
+            name="Jason Huang"
+            text="Jason is a grade 12 student, executive member, and lead
+                  engineer in the Royals VEX Robotics team. He has been a part
+                  of VEX from it's inception back in his grade 9 year. Outside
+                  of VEX, he does software development, advocates for open
+                  source software, and does some photography on the side."
+          />
+          <TeamCard
+            src={require("../images/Karen1.jpg")}
             name="Karen Ye"
             text="Karen Ye is a Grade 12 student at John Fraser S.S. and is
                   super excited to be apart of her school's VEX Robotics team
@@ -163,6 +134,24 @@ const TeamPage = () => {
                   electronics!"
           />
 
+          <TeamCard
+            src={require("../images/Larry.jpg")}
+            name="Larry Wu"
+            text="Larry Wu is a Grade 12 student at JFSS and is excited to be a
+                  part of his school's VEX robotics team this year as a CAD
+                  Designer. He joined VEX in Grade 11. In his free time he
+                  enjoys, guitar, photography and traveling."
+          />
+        </SimpleGrid>
+        <br />
+        <SimpleGrid columns={3} spacing={50}>
+          <TeamCard
+            src={require("../images/curtis.jpg")}
+            name="Curtis An"
+            text="Curtis is a grade 12 student at JFSS. He has been a member of the JFSS Royals since grade 10 and has helped out with strategy, documentation, and generally administrative tasks with the team in past and current years. In his free time, he enjoys hanging out with friends while still complying with COVID-19 regulations of course."
+          />
+
+          <br />
           <br />
         </SimpleGrid>
       </Box>
