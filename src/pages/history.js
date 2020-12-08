@@ -172,7 +172,7 @@ const HistoryPage = () => {
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/ballin1.png")}
+              src={require("../images/teamB.png")}
               alt="history"
               height="350px"
             />

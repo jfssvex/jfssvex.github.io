@@ -44,12 +44,14 @@ const IndexPage = () => {
                 constructing and coding a new robot to complete a challenge and
                 compete with other teams across the province. Created in 2017,
                 the club has expanded to include several members and also two
-                teams for the 2019/20 season (82050A and 82050B). We have been
-                able to run because of our amazing teacher supervisors: Mr.
-                Ghorvei, Ms. McEwen, and Mr. Lightbody - thank you! Furthermore,
-                our school is able to fund us directly and is always advocating
-                for us, thanks to our principal, Ms. Kaukab, and other office
-                staff such as Ms. Santilli and Ms. Coulter!
+                teams for the 2019/20 season (82050A and 82050B). Unfortunately,
+                only 82050A is running for Change Up due to COVID-19 and social
+                distancing policies. We have been able to run because of our
+                amazing teacher supervisors: Mr. Ghorvei, Ms. McEwen, and Mr.
+                Lightbody - thank you! Furthermore, our school is able to fund
+                us directly and is always advocating for us, thanks to our
+                principal, Ms. Kaukab, and other office staff such as Ms.
+                Santilli and Ms. Coulter!
               </Text>
             </Box>
             <Image
