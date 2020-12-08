@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Heading, Text, Center } from "@chakra-ui/core"
+import { Heading, Text, Center, Image, SimpleGrid } from "@chakra-ui/core"
 
 import { Box } from "@chakra-ui/core"
 import Footer from "../components/footer"
@@ -61,7 +61,21 @@ const HistoryPage = () => {
             the team. As such, the team had to expand and rebuild the following
             year.
           </Text>
-
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/uno.png")}
+              alt="who are we"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/dos.png")}
+              alt="who are we"
+            />
+          </SimpleGrid>
           <br />
           <Heading as="h3" size="md">
             2018/19 Turning Point
@@ -92,7 +106,23 @@ const HistoryPage = () => {
             the robotics design process and were eager to continue improving
             into the next season.
           </Text>
-
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/tres.jpg")}
+              alt="history"
+              height="360px"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/quatros.jpg")}
+              alt="history"
+              height="350px"
+            />
+          </SimpleGrid>
           <br />
           <Heading as="h3" size="md">
             2019/20 Tower Takeover
