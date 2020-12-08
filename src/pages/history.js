@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Heading, Text, Center } from "@chakra-ui/core"
+import { Heading, Text, Center, Image, SimpleGrid } from "@chakra-ui/core"
 
-import { Box, Image } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 import Footer from "../components/footer"
 
 import Layout from "../components/layout"
@@ -34,17 +34,6 @@ const HistoryPage = () => {
           </Heading>
           <br />
           <br />
-
-          <Center>
-            <Image
-              boxSize="70vw"
-              objectFit="cover"
-              draggable={false}
-              src={require("../images/vextimeline.png")}
-              alt="Dan Abramov"
-            />
-          </Center>
-          <br />
           <Heading as="h3" size="md">
             2017/18 In the Zone
           </Heading>
@@ -56,10 +45,11 @@ const HistoryPage = () => {
             home for years to come! <br />
             <br />
             Almost everyone was new to VEX, which made the year a great learning
-            opportunity. With some amazing members, we were able to build a
+            opportunity. With a total of 6 members, we were able to build a
             robot during lunch breaks and after school sessions thanks to our
             amazing teacher supervisors (Ms. McEwen and Mr. Lightbody). After
-            the holidays, our first robot was ready to compete. <br />
+            the holidays, our first robot was ready to compete.
+            <br />
             <br />
             With the robot complete, the team was able to attend our first
             competition, the iDesign Central Toronto Qualifying event. We won 3
@@ -71,7 +61,21 @@ const HistoryPage = () => {
             the team. As such, the team had to expand and rebuild the following
             year.
           </Text>
-
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/uno.png")}
+              alt="history"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/dos.png")}
+              alt="history"
+            />
+          </SimpleGrid>
           <br />
           <Heading as="h3" size="md">
             2018/19 Turning Point
@@ -102,7 +106,23 @@ const HistoryPage = () => {
             the robotics design process and were eager to continue improving
             into the next season.
           </Text>
-
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/tres.jpg")}
+              alt="history"
+              height="360px"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/quatros.jpg")}
+              alt="history"
+              height="350px"
+            />
+          </SimpleGrid>
           <br />
           <Heading as="h3" size="md">
             2019/20 Tower Takeover
@@ -140,7 +160,23 @@ const HistoryPage = () => {
             the most successful year so far. Our members were more excited than
             ever for the new season.
           </Text>
-
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/ballin.jpg")}
+              alt="history"
+              height="360px"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/ballin1.jpg")}
+              alt="history"
+              height="350px"
+            />
+          </SimpleGrid>
           <br />
           <Heading as="h3" size="md">
             2020/21 Change Up
@@ -180,6 +216,23 @@ const HistoryPage = () => {
             and an online skills competition (Maple Leaf Qualifying) on January
             14.
           </Text>
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/whatever5is.png")}
+              alt="history"
+              height="360px"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/whatever6is.png")}
+              alt="history"
+              height="350px"
+            />
+          </SimpleGrid>
         </Box>
       </Center>
 

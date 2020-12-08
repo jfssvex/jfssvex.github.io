@@ -19,7 +19,11 @@ function Footer({ data, year }) {
             </Text>
           </a>
         </Box>
-        <Box>Built with ReactJS & ChakraUI ©{year}</Box>
+        <Box>
+          <a href="https://github.com/jfssvex/jfssvex.github.io">
+            Built with ReactJS & ChakraUI ©{year}
+          </a>
+        </Box>
         <Box>
           <a href="https://www.instagram.com/jfss_royals/">
             <Text style={{ textAlign: "right", alignSelf: "stretch" }}>

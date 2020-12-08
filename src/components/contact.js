@@ -62,7 +62,13 @@ export default class ContactForm extends React.Component {
               <br />
               <br />
 
-              <Button height="48px" width="500px" type="submit" value="Send">
+              <Button
+                height="48px"
+                width="500px"
+                type="submit"
+                value="Send"
+                onClick={() => alert("Message Submitted!")}
+              >
                 Submit
               </Button>
             </form>
