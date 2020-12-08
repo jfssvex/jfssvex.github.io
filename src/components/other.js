@@ -10,11 +10,11 @@ const Other = () => {
         Something Else
       </Heading>
       <br />
+
       <SimpleGrid
-        columns={{ sm: 1, md: 2 }}
-        spacing={5}
+        columns={2}
+        spacing={50}
         height={{ sm: "940px", md: "470px" }}
-        maxWidth="1280px"
       >
         <Box flex="1 1 auto">
           <iframe
