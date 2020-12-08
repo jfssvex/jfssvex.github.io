@@ -111,14 +111,14 @@ const HistoryPage = () => {
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/uno.png")}
+              src={require("../images/tres.png")}
               alt="history"
               height="360px"
             />
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/uno.png")}
+              src={require("../images/quatros.png")}
               alt="history"
               height="350px"
             />
@@ -165,14 +165,14 @@ const HistoryPage = () => {
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/uno.png")}
+              src={require("../images/ballin.png")}
               alt="history"
               height="360px"
             />
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/uno.png")}
+              src={require("../images/ballin1.png")}
               alt="history"
               height="350px"
             />
