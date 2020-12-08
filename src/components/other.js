@@ -1,6 +1,5 @@
 import { Box, Heading, SimpleGrid, Text, useColorMode } from "@chakra-ui/core"
 import React from "react"
-import devops from "../images/devops.svg"
 const Other = () => {
   const { colorMode } = useColorMode()
 

@@ -1,9 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Heading, Text } from "@chakra-ui/core"
-import Skills from "../components/skills"
-import ContactFrom from "../components/contact"
-import Other from "../components/other"
 
 import { Box, SimpleGrid, Image } from "@chakra-ui/core"
 import Footer from "../components/footer"
