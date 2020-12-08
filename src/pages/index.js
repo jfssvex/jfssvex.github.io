@@ -14,7 +14,7 @@ import SEO from "../components/seo"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "myHeroImage.png" }) {
+      heroImage: file(relativePath: { eq: "thingyHeroImage.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -26,7 +26,7 @@ const IndexPage = () => {
   const year = new Date().getFullYear() || "2020"
 
   return (
-    <Layout heroImage={data.heroImage} heroText="JFSS Royals">
+    <Layout heroImage={data.heroImage} heroText="Royals - 82050">
       <SEO title="Home" />
       {/* <h1>Hi people</h1> */}
       <br />
@@ -55,7 +55,7 @@ const IndexPage = () => {
             <Image
               width="48vw"
               objectFit="cover"
-              src={require("../images/whoweare.png")}
+              src={require("../images/logoRoyals.png")}
               alt="who are we"
             />
           </SimpleGrid>

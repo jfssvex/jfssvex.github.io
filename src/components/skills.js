@@ -27,17 +27,6 @@ const Skills = () => {
             bg={skillTypes[type].color + ".100"}
             zIndex={206}
           >
-            <Box
-              as="img"
-              src={images[key]}
-              alt={type}
-              pos="absolute"
-              width="inherit"
-              height="100%"
-              opacity={0.14}
-              zIndex={205}
-            />
-
             <Heading
               textAlign="center"
               as="h2"

@@ -57,7 +57,11 @@ const VexPage = () => {
         </Text>
         <br />
 
-        <Text as="a" href="https://www.vexrobotics.com/">
+        <Text
+          as="a"
+          style={{ color: "blue" }}
+          href="https://www.vexrobotics.com/"
+        >
           Learn more at the VEX robotics website.{" "}
         </Text>
         <br />

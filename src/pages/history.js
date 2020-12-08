@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Heading, Text, Center } from "@chakra-ui/core"
 
-import { Box, Image } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 import Footer from "../components/footer"
 
 import Layout from "../components/layout"
@@ -33,17 +33,6 @@ const HistoryPage = () => {
             Royals Timeline
           </Heading>
           <br />
-          <br />
-
-          <Center>
-            <Image
-              boxSize="70vw"
-              objectFit="cover"
-              draggable={false}
-              src={require("../images/vextimeline.png")}
-              alt="Dan Abramov"
-            />
-          </Center>
           <br />
           <Heading as="h3" size="md">
             2017/18 In the Zone
