@@ -160,7 +160,23 @@ const HistoryPage = () => {
             the most successful year so far. Our members were more excited than
             ever for the new season.
           </Text>
-
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/whatever5is.png")}
+              alt="history"
+              height="360px"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/whatever6is.png")}
+              alt="history"
+              height="350px"
+            />
+          </SimpleGrid>
           <br />
           <Heading as="h3" size="md">
             2020/21 Change Up
@@ -200,6 +216,23 @@ const HistoryPage = () => {
             and an online skills competition (Maple Leaf Qualifying) on January
             14.
           </Text>
+          <br />
+          <SimpleGrid columns={2} spacing={50}>
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/whatever5is.png")}
+              alt="history"
+              height="360px"
+            />
+            <Image
+              width="48vw"
+              objectFit="cover"
+              src={require("../images/whatever6is.png")}
+              alt="history"
+              height="350px"
+            />
+          </SimpleGrid>
         </Box>
       </Center>
 
