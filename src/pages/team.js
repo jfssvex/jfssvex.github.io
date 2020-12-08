@@ -22,7 +22,7 @@ const TeamPage = () => {
           <TeamCard
             src={require("../images/1.jpg")}
             name="Mr. Ghorvei"
-            text="Mr. Ghorvei is our team's teacher superviser. Without him and the support of our school, our club wouldn't be here."
+            text="Mr. Ghorvei is a tech teacher at John Fraser Secondary School. He is also our team's amazing teacher superviser. He gives us space to host meetings, get funding for new parts and without him and the support of our school, our club wouldn't be here."
           />
           <TeamCard
             src={require("../images/Waris.jpg")}
