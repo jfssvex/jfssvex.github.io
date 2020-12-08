@@ -56,10 +56,11 @@ const HistoryPage = () => {
             home for years to come! <br />
             <br />
             Almost everyone was new to VEX, which made the year a great learning
-            opportunity. With some amazing members, we were able to build a
+            opportunity. With a total of 6 members, we were able to build a
             robot during lunch breaks and after school sessions thanks to our
             amazing teacher supervisors (Ms. McEwen and Mr. Lightbody). After
-            the holidays, our first robot was ready to compete. <br />
+            the holidays, our first robot was ready to compete.
+            <br />
             <br />
             With the robot complete, the team was able to attend our first
             competition, the iDesign Central Toronto Qualifying event. We won 3
