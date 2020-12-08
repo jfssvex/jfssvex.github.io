@@ -14,7 +14,7 @@ const Skills = () => {
   return (
     <Box px={5} width="95vw">
       <Heading as="h1" mb={5} textAlign={["left", "center"]}>
-        Something
+        Team Roles
       </Heading>
       <br />
       <SimpleGrid columns={[1, 1, 2, 4]} spacing={5}>

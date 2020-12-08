@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Heading, Text } from "@chakra-ui/core"
+import { Heading, Text, Image, SimpleGrid, Center } from "@chakra-ui/core"
 import Skills from "../components/skills"
 import ContactFrom from "../components/contact"
 import Other from "../components/other"
@@ -29,23 +29,38 @@ const IndexPage = () => {
     <Layout heroImage={data.heroImage} heroText="JFSS Royals">
       <SEO title="Home" />
       {/* <h1>Hi people</h1> */}
-      <Box px={5} width="95vw">
-        <Heading as="h2" size="lg">
-          What is VEX?
-        </Heading>
-        <Text>
-          VEX is a popular robotics competition held worldwide. Teams build a
-          robot with provided parts and program it to run through a course and
-          complete objectives, such as throwing a ball in a hoop and moving
-          objects. You do not need to have prior experience with the competition
-          to apply to the club, but be sure to learn as much as you can so you
-          can lead the team to success in the coming year.
-        </Text>
-        <Text as="a" href="https://www.vexrobotics.com/">
-          Learn more at the VEX robotics website.{" "}
-        </Text>
-      </Box>
-
+      <br />
+      <Center>
+        <Box px={5} width="95vw">
+          <SimpleGrid columns={2} spacing={100}>
+            <Box>
+              <Heading as="h2" size="lg">
+                Who Are We?
+              </Heading>
+              <Text>
+                The John Fraser SS Royals are a group of students passionate for
+                robotics, engineering, design, and programming. We compete in
+                the high school VEX Robotics Competition in Ontario, every year
+                constructing and coding a new robot to complete a challenge and
+                compete with other teams across the province. Created in 2017,
+                the club has expanded to include several members and also two
+                teams for the 2019/20 season (82050A and 82050B). We have been
+                able to run because of our amazing teacher supervisors: Mr.
+                Ghorvei, Ms. McEwen, and Mr. Lightbody - thank you! Furthermore,
+                our school is able to fund us directly and is always advocating
+                for us, thanks to our principal, Ms. Kaukab, and other office
+                staff such as Ms. Santilli and Ms. Coulter!
+              </Text>
+            </Box>
+            <Image
+              width="100vw"
+              objectFit="cover"
+              src={require("../images/whoweare.png")}
+              alt="who are we"
+            />
+          </SimpleGrid>
+        </Box>
+      </Center>
       <center>
         <Box mt={20}>
           <Other />

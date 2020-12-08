@@ -38,39 +38,62 @@ const Other = () => {
           // height="470px"
           flex="1 1 auto"
         >
-          <Box
-            as="img"
-            src={devops}
-            alt="Image"
-            pos="absolute"
-            width="inherit"
-            height="100%"
-            opacity={0.14}
-            zIndex={205}
-          />
-
+          <br />
           <Heading
             textAlign="center"
             as="h2"
             fontSize={20}
             textTransform="capitalize"
-            my={5}
+            my={2}
             color={colorMode && "black"}
           >
-            hedo
+            How can I join the Royals?
           </Heading>
 
           <Text
-            py={2}
             textAlign="center"
-            width="80%"
+            width="90%"
             rounded="lg"
             mb={2}
             mx="auto"
             color={"gray.700"}
-            fontWeight="600"
+            fontWeight="400"
           >
-            heyo
+            Our team applications open for all John Fraser SS students at the
+            beginning of each school year (around September/October). You can
+            hear about us through the school announcements, and meet us in
+            person at school club promo events where we usually demo our robots!
+            If the deadline to apply has passed but you are still interested in
+            joining, feel free to email us at jfssvex@gmail.com. We are always
+            looking for dedicated members who are interested in learning about
+            robotics!
+          </Text>
+
+          <br />
+          <Heading
+            textAlign="center"
+            as="h2"
+            fontSize={20}
+            textTransform="capitalize"
+            my={2}
+            color={colorMode && "black"}
+          >
+            What if I don’t have any prior experience?
+          </Heading>
+
+          <Text
+            textAlign="center"
+            width="90%"
+            rounded="lg"
+            mb={2}
+            mx="auto"
+            color={"gray.700"}
+            fontWeight="400"
+          >
+            Not a problem! You do not need to have prior experience with the
+            competition to join the club. Many members join without any
+            knowledge - VEX is a great learning experience and we are all very
+            welcoming!
           </Text>
         </Box>
       </SimpleGrid>
