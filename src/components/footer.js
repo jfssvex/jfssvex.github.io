@@ -11,13 +11,15 @@ function Footer({ data, year }) {
       borderColor="gray.200"
       alignItems="center"
     >
-      <SimpleGrid columns={3} spacing={10}>
+      <SimpleGrid columns={3} spacing={8}>
         <Box as="span">
-          <Text style={{ textAlign: "left", alignSelf: "stretch" }}>
-            JFSS Vex
-          </Text>
+          <a href="mailto: jfssvex@gmail.com">
+            <Text style={{ textAlign: "left", alignSelf: "stretch" }}>
+              jfssvex@gmail.com
+            </Text>
+          </a>
         </Box>
-        <Box>Built by Vex Robotics Team ©{year}</Box>
+        <Box>Built with ReactJS & ChakraUI ©{year}</Box>
         <Box>
           <a href="https://www.instagram.com/jfss_royals/">
             <Text style={{ textAlign: "right", alignSelf: "stretch" }}>

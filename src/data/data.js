@@ -1,21 +1,26 @@
 export const skillTypes = {
-  Blah: {
-    skills: ["something", "something 2", "something 3", "something 4"],
+  Engineer: {
+    skills: ["Learn Engineering", "Design Robot", "Build Robot", "Test Robot"],
     color: "blue",
   },
 
-  BlahBlah: {
-    skills: ["something", "something 2", "something 3", "something 4"],
+  Programmer: {
+    skills: ["Learn Programming", "Code Robot", "Code Autonomous", "Test Code"],
     color: "red",
   },
 
-  BlahThree: {
-    skills: ["something", "something 2", "something 3", "something 4"],
+  Strategist: {
+    skills: [
+      "Learn Competition",
+      "Create Strategies",
+      "Share Strategies",
+      "Take Notes",
+    ],
     color: "green",
   },
 
-  BlahFour: {
-    skills: ["something", "something 2", "something 3", "something 4"],
+  Other: {
+    skills: ["Documentation", "3D Printing", "Social Media", "Instructor"],
     color: "gray",
   },
 }
