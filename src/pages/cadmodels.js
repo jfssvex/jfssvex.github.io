@@ -1,7 +1,9 @@
 import React from "react"
 import { Box, Heading, Text, Center, HStack } from "@chakra-ui/core"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 
 const ModelPage = () => {
   return (
@@ -40,7 +42,13 @@ const ModelPage = () => {
           </Box>
 
           <Box w="30vw" height="70vh">
-            <Box borderRadius="lg" bg={"blue.100"} width="100%" height="100%" px={5}>
+            <Box
+              borderRadius="lg"
+              bg={"blue.100"}
+              width="100%"
+              height="100%"
+              px={5}
+            >
               <Heading as="h3" size="lg" style={{ textAlign: "center" }} py={5}>
                 VEX 2020-2021 Change Up Season
               </Heading>
@@ -61,8 +69,16 @@ const ModelPage = () => {
           </Box>
         </HStack>
       </Center>
+
+      <br />
+      <br />
+      <br />
+
+      <center>
+        <Footer data={null} year={new Date().getFullYear() || "2020"} />
+      </center>
     </Layout>
   )
 }
 
-export default ModelPage
+export default ModelPage;
