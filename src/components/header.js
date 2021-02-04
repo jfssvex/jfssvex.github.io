@@ -41,6 +41,9 @@ const Header = ({ siteTitle }) => (
     <Button as={Link} to="/team" colorScheme="purple">
       Team
     </Button>
+    <Button as={Link} to="/cadmodels" colorScheme="purple">
+      CAD Models
+    </Button>
     <Menu>
       <MenuButton
         as={Button}
