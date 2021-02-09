@@ -1,17 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Heading, Text } from "@chakra-ui/core"
+import Img from "gatsby-image"
 
-import { Box, SimpleGrid, Image } from "@chakra-ui/core"
+import { Heading, Text } from "@chakra-ui/core"
+import { Box, SimpleGrid } from "@chakra-ui/core"
 import Footer from "../components/footer"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const VexPage = () => {
-  const data = useStaticQuery(graphql`
+  const pictures = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "hero.png" }) {
+      changeUpField: file(relativePath: { eq: "VRC_ChangeUp_Field.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -20,6 +21,7 @@ const VexPage = () => {
       }
     }
   `)
+
   const year = new Date().getFullYear() || "2020"
 
   return (
@@ -71,8 +73,8 @@ const VexPage = () => {
 
         <SimpleGrid columns={2} spacing={10}>
           <Box>
-            <Image
-              src="https://www.vexrobotics.com/media/wysiwyg/VRC-ChangeUp-Comp_2.jpg"
+            <Img
+              fluid={pictures.changeUpField.childImageSharp.fluid}
               alt="Game Zone"
             />
           </Box>
@@ -96,7 +98,7 @@ const VexPage = () => {
       </Box>
 
       <center>
-        <Footer data={data} year={year} />
+        <Footer data={null} year={year} />
       </center>
     </Layout>
   )

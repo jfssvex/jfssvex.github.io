@@ -3,13 +3,14 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import { Heading, Text, Center, Image, SimpleGrid, Box } from "@chakra-ui/core"
+import { Heading, Text, Center, SimpleGrid, Box } from "@chakra-ui/core"
 
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Use this function to generate query, cannot run in file to generate dynamically bc queries are generated at build time
+/*
 const generateQueryForImages = () => {
   const pictures = [
     {
@@ -71,6 +72,7 @@ const generateQueryForImages = () => {
 
   return picturesQuery
 }
+*/
 
 const HistoryPage = () => {
   const pics = useStaticQuery(graphql`

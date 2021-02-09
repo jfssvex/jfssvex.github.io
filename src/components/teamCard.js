@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Heading, Text, SimpleGrid, Image, Box } from "@chakra-ui/core"
+import { Heading, Text, SimpleGrid, Box } from "@chakra-ui/core"
 import Img from "gatsby-image"
 
 var TeamCard = ({ gatsbyImgSrc, name, text }) => {
