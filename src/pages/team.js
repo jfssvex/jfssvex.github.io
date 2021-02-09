@@ -5,8 +5,117 @@ import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TeamCard from "../components/teamCard"
+import { useStaticQuery } from "gatsby"
 
 const TeamPage = () => {
+  const pictures = useStaticQuery(graphql`
+    query {
+      MrGhorvei: file(relativePath: { eq: "MrGhorvei_cropped.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Waris: file(relativePath: { eq: "Waris_cropped.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Rayhaan: file(relativePath: { eq: "Rayhaan_cropped.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Rishab: file(relativePath: { eq: "Rishab_cropped.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Jason: file(relativePath: { eq: "Jason_cropped.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Karen: file(relativePath: { eq: "Karen1.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Mihir: file(relativePath: { eq: "Mihir.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Shavaiz: file(relativePath: { eq: "Shavaiz.png" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Owen: file(relativePath: { eq: "Owen.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Andy: file(relativePath: { eq: "Andy.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Vinesh: file(relativePath: { eq: "Vinesh.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Larry: file(relativePath: { eq: "Larry_cropped.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+
+      Curtis: file(relativePath: { eq: "Curtis_cropped.jpg" }) {
+        childImageSharp {
+          fixed(width: 150, height: 150) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+    }
+  `)
+
   const year = new Date().getFullYear() || "2020"
 
   return (
@@ -20,12 +129,12 @@ const TeamPage = () => {
 
         <SimpleGrid columns={3} spacing={50}>
           <TeamCard
-            src={require("../images/1.jpg")}
+            gatsbyImgSrc={pictures.MrGhorvei.childImageSharp.fixed}
             name="Mr. Ghorvei"
             text="Mr. Ghorvei is a tech teacher at John Fraser Secondary School. He is also our team's amazing teacher superviser. He gives us space to host meetings, get funding for new parts and without him and the support of our school, our club wouldn't be here."
           />
           <TeamCard
-            src={require("../images/Waris.jpg")}
+            gatsbyImgSrc={pictures.Waris.childImageSharp.fixed}
             name="Waris Zahoor"
             text="Waris is a grade 12 student at Fraser who is thrilled to be
                   the Royals' team captain for the year. He leads the team
@@ -36,7 +145,7 @@ const TeamPage = () => {
           />
 
           <TeamCard
-            src={require("../images/Rayhaan.jpg")}
+            gatsbyImgSrc={pictures.Rayhaan.childImageSharp.fixed}
             name="Rayhaan Tanweer"
             text="Rayhaan is a Grade 12 student at JFSS. He is the Royals' lead
                   programmer and driver for this season. This is Rayhaan's third
@@ -49,7 +158,7 @@ const TeamPage = () => {
         <br />
         <SimpleGrid columns={3} spacing={50}>
           <TeamCard
-            src={require("../images/Rishab.jpg")}
+            gatsbyImgSrc={pictures.Rishab.childImageSharp.fixed}
             name="Rishabh Tamhane"
             text="Rishabh is a Grade 12 Student, and is excited to be this
                   year's Documentation and Strategy Lead! He joined the VEX team
@@ -57,7 +166,7 @@ const TeamPage = () => {
                   of all the executive members. He also likes planes. A lot."
           />
           <TeamCard
-            src={require("../images/Jason.jpg")}
+            gatsbyImgSrc={pictures.Jason.childImageSharp.fixed}
             name="Jason Huang"
             text="Jason is a grade 12 student, executive member, and lead
                   engineer in the Royals VEX Robotics team. He has been a part
@@ -66,7 +175,7 @@ const TeamPage = () => {
                   source software, and does some photography on the side."
           />
           <TeamCard
-            src={require("../images/Karen1.jpg")}
+            gatsbyImgSrc={pictures.Karen.childImageSharp.fixed}
             name="Karen Ye"
             text="Karen Ye is a Grade 12 student at John Fraser S.S. and is
                   super excited to be apart of her school's VEX Robotics team
@@ -81,7 +190,7 @@ const TeamPage = () => {
         <br />
         <SimpleGrid columns={3} spacing={50}>
           <TeamCard
-            src={require("../images/Mihir.jpg")}
+            gatsbyImgSrc={pictures.Mihir.childImageSharp.fixed}
             name="Mihir Kachroo"
             text="Mihir Kachroo is a Grade 11 student at JFSS and is thrilled to
                   be part of his school’s VEX Robotics team this year as a
@@ -90,7 +199,7 @@ const TeamPage = () => {
                   art, Ultimate Frisbee and developing cool apps!"
           />
           <TeamCard
-            src={require("../images/Shavaiz.png")}
+            gatsbyImgSrc={pictures.Shavaiz.childImageSharp.fixed}
             name="Shavaiz Khan"
             text="Shavaiz Khan is a Grade 11 student at JFSS, who is apart of
                   the VEX Robotics team at John Fraser, as a Programmer. He
@@ -100,7 +209,7 @@ const TeamPage = () => {
           />
 
           <TeamCard
-            src={require("../images/Owen.jpg")}
+            gatsbyImgSrc={pictures.Owen.childImageSharp.fixed}
             name="Owen Pan"
             text="Owen is a Grade 11 student at JFSS and is glad to be part of
                   his school’s VEX Robotics team this year as an Engineer. He
@@ -113,7 +222,7 @@ const TeamPage = () => {
         <br />
         <SimpleGrid columns={3} spacing={50}>
           <TeamCard
-            src={require("../images/Andy.jpg")}
+            gatsbyImgSrc={pictures.Andy.childImageSharp.fixed}
             name="Andy Zhang"
             text="Hi, my name is Andy, and I'm a Grade 11 student attending
                   Fraser this year. I've been part of the VEX team since Grade 9
@@ -123,7 +232,7 @@ const TeamPage = () => {
           />
 
           <TeamCard
-            src={require("../images/Vinesh.jpg")}
+            gatsbyImgSrc={pictures.Vinesh.childImageSharp.fixed}
             name="Vinesh Vivekanand"
             text="Vinesh is a grade 11 student at JFSS and is one of the
                   engineers for the VEX Competition Team. He has been apart of
@@ -135,7 +244,7 @@ const TeamPage = () => {
           />
 
           <TeamCard
-            src={require("../images/Larry.jpg")}
+            gatsbyImgSrc={pictures.Larry.childImageSharp.fixed}
             name="Larry Wu"
             text="Larry Wu is a Grade 12 student at JFSS and is excited to be a
                   part of his school's VEX robotics team this year as a CAD
@@ -146,7 +255,7 @@ const TeamPage = () => {
         <br />
         <SimpleGrid columns={3} spacing={50}>
           <TeamCard
-            src={require("../images/curtis.jpg")}
+            gatsbyImgSrc={pictures.Curtis.childImageSharp.fixed}
             name="Curtis An"
             text="Curtis is a grade 12 student at JFSS. He has been a member of the JFSS Royals since grade 10 and has helped out with strategy, documentation, and generally administrative tasks with the team in past and current years. In his free time, he enjoys hanging out with friends while still complying with COVID-19 regulations of course."
           />
