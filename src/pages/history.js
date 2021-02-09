@@ -1,17 +1,137 @@
 import React from "react"
+
 import { useStaticQuery, graphql } from "gatsby"
-import { Heading, Text, Center, Image, SimpleGrid } from "@chakra-ui/core"
+import Img from "gatsby-image"
 
-import { Box } from "@chakra-ui/core"
+import { Heading, Text, Center, Image, SimpleGrid, Box } from "@chakra-ui/core"
+
 import Footer from "../components/footer"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+// Use this function to generate query, cannot run in file to generate dynamically bc queries are generated at build time
+const generateQueryForImages = () => {
+  const pictures = [
+    {
+      name: "InTheZone1",
+      fname: "uno.png",
+    },
+    {
+      name: "InTheZone2",
+      fname: "dos.png",
+    },
+    {
+      name: "TurningPoint1",
+      fname: "tres.png",
+    },
+    {
+      name: "TurningPoint2",
+      fname: "quatros.png",
+    },
+    {
+      name: "TowerTakeoverTeamA",
+      fname: "ballin.png",
+    },
+    {
+      name: "TowerTakeoverTeamB",
+      fname: "teamB.png",
+    },
+    {
+      name: "ChangeUpPic1",
+      fname: "whatever5is.png",
+    },
+    {
+      name: "ChangeUpPic2",
+      fname: "whatever6is.png",
+    },
+  ]
+
+  let picturesQuery = "query {"
+
+  picturesQuery = picturesQuery.concat(
+    pictures
+      .map(
+        obj =>
+          `
+      ${obj.name}: file(relativePath: { eq: "${obj.fname}" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    `
+      )
+      .join("")
+  )
+
+  picturesQuery = picturesQuery.concat("}")
+
+  console.log(picturesQuery)
+
+  return picturesQuery
+}
+
 const HistoryPage = () => {
-  const data = useStaticQuery(graphql`
+  const pics = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "hero.png" }) {
+      InTheZone1: file(relativePath: { eq: "uno.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      InTheZone2: file(relativePath: { eq: "dos.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TurningPoint1: file(relativePath: { eq: "tres.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TurningPoint2: file(relativePath: { eq: "quatros.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TowerTakeoverTeamA: file(relativePath: { eq: "ballin.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      TowerTakeoverTeamB: file(relativePath: { eq: "teamB.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      ChangeUpPic1: file(relativePath: { eq: "whatever5is.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      ChangeUpPic2: file(relativePath: { eq: "whatever6is.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -20,6 +140,7 @@ const HistoryPage = () => {
       }
     }
   `)
+
   const year = new Date().getFullYear() || "2020"
 
   return (
@@ -63,17 +184,17 @@ const HistoryPage = () => {
           </Text>
           <br />
           <SimpleGrid columns={2} spacing={50}>
-            <Image
+            <Img
               width="48vw"
               objectFit="cover"
-              src={require("../images/uno.png")}
-              alt="history"
+              alt="In The Zone Picture 1"
+              fluid={pics.InTheZone1.childImageSharp.fluid}
             />
-            <Image
+            <Img
               width="48vw"
               objectFit="cover"
-              src={require("../images/dos.png")}
-              alt="history"
+              alt="In The Zone Picture 2"
+              fluid={pics.InTheZone2.childImageSharp.fluid}
             />
           </SimpleGrid>
           <br />
@@ -108,19 +229,19 @@ const HistoryPage = () => {
           </Text>
           <br />
           <SimpleGrid columns={2} spacing={50}>
-            <Image
+            <Img
               width="48vw"
+              height="24vh"
               objectFit="cover"
-              src={require("../images/tres.png")}
-              alt="history"
-              height="360px"
+              alt="Turning Point Picture 1"
+              fluid={pics.TurningPoint1.childImageSharp.fluid}
             />
-            <Image
+            <Img
               width="48vw"
+              height="0px"
               objectFit="cover"
-              src={require("../images/quatros.png")}
-              alt="history"
-              height="350px"
+              alt="Turning Point Picture 2"
+              fluid={pics.TurningPoint2.childImageSharp.fluid}
             />
           </SimpleGrid>
           <br />
@@ -162,19 +283,19 @@ const HistoryPage = () => {
           </Text>
           <br />
           <SimpleGrid columns={2} spacing={50}>
-            <Image
+            <Img
               width="48vw"
+              height="24vh"
               objectFit="cover"
-              src={require("../images/ballin.png")}
-              alt="history"
-              height="360px"
+              alt="Tower Takeover Team A"
+              fluid={pics.TowerTakeoverTeamA.childImageSharp.fluid}
             />
-            <Image
+            <Img
               width="48vw"
+              height="0px"
               objectFit="cover"
-              src={require("../images/teamB.png")}
-              alt="history"
-              height="350px"
+              alt="Tower Takeover Team B"
+              fluid={pics.TowerTakeoverTeamB.childImageSharp.fluid}
             />
           </SimpleGrid>
           <br />
@@ -218,19 +339,19 @@ const HistoryPage = () => {
           </Text>
           <br />
           <SimpleGrid columns={2} spacing={50}>
-            <Image
+            <Img
               width="48vw"
+              height="24vh"
               objectFit="cover"
-              src={require("../images/whatever5is.png")}
-              alt="history"
-              height="360px"
+              alt="Tower Takeover Team A"
+              fluid={pics.ChangeUpPic1.childImageSharp.fluid}
             />
-            <Image
+            <Img
               width="48vw"
+              height="0px"
               objectFit="cover"
-              src={require("../images/whatever6is.png")}
-              alt="history"
-              height="350px"
+              alt="Tower Takeover Team B"
+              fluid={pics.ChangeUpPic2.childImageSharp.fluid}
             />
           </SimpleGrid>
         </Box>
@@ -240,7 +361,7 @@ const HistoryPage = () => {
       <br />
 
       <center>
-        <Footer data={data} year={year} />
+        <Footer data={null} year={year} />
       </center>
     </Layout>
   )

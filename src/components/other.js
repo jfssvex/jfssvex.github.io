@@ -21,11 +21,12 @@ const Other = () => {
             src="https://myhub.autodesk360.com/ue2d7bfee/shares/public/SH56a43QTfd62c1cd968ec70f027b19cabfc?mode=embed"
             width="100%"
             height="100%"
-            allowfullscreen="true"
-            webkitallowfullscreen="true"
+            allowFullScreen={true}
+            webkitAllowFullScreen={true}
             alt="3D Model"
-            mozallowfullscreen="true"
-            frameborder="0"
+            mozAllowFullScreen={true}
+            frameBorder="0"
+            loading="lazy"
           ></iframe>
         </Box>
         <Box

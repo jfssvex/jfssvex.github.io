@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import { Heading, Text, Image, SimpleGrid, Center } from "@chakra-ui/core"
 import Skills from "../components/skills"
 import ContactFrom from "../components/contact"
@@ -15,6 +16,13 @@ const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
       heroImage: file(relativePath: { eq: "thingyHeroImage.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      royalsLogo: file(relativePath: { eq: "logoRoyals.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -54,11 +62,11 @@ const IndexPage = () => {
                 Santilli and Ms. Coulter!
               </Text>
             </Box>
-            <Image
+            <Img
               width="48vw"
               objectFit="cover"
-              src={require("../images/logoRoyals.png")}
-              alt="who are we"
+              alt="JFSS Royals Logo"
+              fluid={data.royalsLogo.childImageSharp.fluid}
             />
           </SimpleGrid>
         </Box>
