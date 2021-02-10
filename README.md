@@ -1,4 +1,4 @@
-# JFSS VEX Site
+# JFSS VEX Webite
 
 JFSS VEX's website for promotion
 
